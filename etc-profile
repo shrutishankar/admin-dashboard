@@ -1,0 +1,10 @@
+## Copy the following line to /etc/profile
+
+JAVA_HOME=/usr/local/java/jdk1.8.0_101
+JRE_HOME=/usr/local/java/jdk1.8.0_101/jre
+PATH=$PATH:$JRE_HOME/bin:$JAVA_HOME/bin
+export JAVA_HOME
+export JRE_HOME
+export PATH
+
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
