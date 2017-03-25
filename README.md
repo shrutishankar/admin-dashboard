@@ -38,15 +38,25 @@ You will need to
 
 
 
-## Maven Installation
+## Maven Commands
 
+Run this to make a clean build and deploy
 ```bash
 mvn clean package
 ```
 
-When running this command a couple of things happen:
+When running the above command a couple of things happen:
 * All the other standard maven phases.
 * The war will be copied to the tomcat folder specified in the tomcat property
+
+
+<br/>
+
+Run this to copy the ui files to teomcat folder for quick refresh
+```bash
+mvn antrun:run@ui
+```
+
 
 
 ## License

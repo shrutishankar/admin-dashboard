@@ -14,6 +14,7 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <vendor.loc>src/main/webapp/vendor</vendor.loc>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <webapp.dir>src/main/webapp</webapp.dir>
         <tomcat.webapp.dir>C:/applications/tomcat/webapps</tomcat.webapp.dir>
 
         <springboot.version>1.4.1.RELEASE</springboot.version>
@@ -184,6 +185,7 @@
             <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <executions>
+                    <!-- DELETE TOMCAT ARTIFACTS -->
                     <execution>
                         <id>delete-artifacts</id>
                         <phase>pre-clean</phase>
@@ -197,12 +199,31 @@
                             <goal>run</goal>
                         </goals>
                     </execution>
+
+                    <!-- COPY ARTIFACTS -->
                     <execution>
                         <id>copy-artifacts</id>
                         <phase>package</phase>
                         <configuration>
                             <tasks>
                                 <copy file="target/${project.artifactId}.war" tofile="${tomcat.webapp.dir}/${project.artifactId}.war" />
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+
+                    <!-- HOT DEPLOY UI-->
+                    <!-- mvn antrun:run@ui -->
+                    <execution>
+                        <id>ui</id>
+                        <phase>install</phase>
+                        <configuration>
+                            <tasks>
+                                <copy todir="${tomcat.webapp.dir}/${project.artifactId}/">
+                                    <fileset dir="${webapp.dir}"></fileset>
+                                </copy>
                             </tasks>
                         </configuration>
                         <goals>
