@@ -16,6 +16,7 @@ built using the technologies Java / Maven / Spring / AngularJs and RequireJs.
 * [nodejs](http://nodejs.org) or `sudo apt-get install nodejs-legacy`
 * [IDE](http://www.jetbrains.com/)
 * [bower](http://bower.io)
+* [eslint](http://eslint.org/docs/user-guide/command-line-interface) or `npm install -g eslint`
 * [Application Server](https://tomcat.apache.org/download-90.cgi) `(tomcat)`
 * Copy the tomcat-users.xml file for tomcat management and administration to the tomcat/conf. Set your own username and password
 

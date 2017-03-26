@@ -15,7 +15,7 @@ public class HelloController {
 
     @ResponseBody
     @RequestMapping(value = "hello", method = RequestMethod.GET)
-    public Hello getHello(@RequestParam(required = false) String name) {
+    public Hello getHello(@RequestParam(name = "name", required = false) String name) {
         return name != null ? new Hello(name) : new Hello("World!");
     }
 }

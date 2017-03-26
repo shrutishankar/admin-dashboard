@@ -1,13 +1,13 @@
 {
-  "name": "wiki-angular-require",
+  "name": "admin-dashboard",
   "private": true,
   "version": "1.0.0",
-  "description": "A starter project for AngularJS and RequireJS combined with java and maven",
+  "description": "An admin dashboard template using AngularJS, RequireJS, Java and Spring",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ivonet/java-angular-seed"
+    "url": "https://github.com/shrutishankar/admin-dashboard"
   },
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1",
     "http-server": "^0.6.1"
@@ -25,6 +25,6 @@
     "protractor": "protractor src/test/javascript/protractor-conf.js",
     "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + cat('src/main/webapp/vendor/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'src/main/webapp/index.html');\""
   },
-
-  "author": "Shruti Shankar"
+  "author": "Shruti Shankar",
+  "dependencies": {}
 }
