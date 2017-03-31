@@ -15,7 +15,7 @@
         <vendor.loc>src/main/webapp/vendor</vendor.loc>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <webapp.dir>src/main/webapp</webapp.dir>
-        <tomcat.webapp.dir>C:/applications/tomcat/webapps</tomcat.webapp.dir>
+        <tomcat.webapp.dir>D:\Applications\tomcat\webapps</tomcat.webapp.dir>
 
         <springboot.version>1.4.1.RELEASE</springboot.version>
         <jackson.version>2.8.3</jackson.version>

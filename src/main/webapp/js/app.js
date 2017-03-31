@@ -1,25 +1,28 @@
 define([
     "angular",
     "./HomeController",
+    "./components/components-module",
 
     "angularAria",
     "angularAnimate",
     "angularBootstrap",
     "angularMaterial",
     "angularRoute"
-], function(angular, HomeController) {
+], function(angular, HomeController, ComponentsModule) {
 
     var app = angular.module('adminDashboard', [
-       "ui.bootstrap.tpls",
+       "ui.bootstrap",
        "ngMaterial",
        "ngAnimate",
-       'ngRoute'
+       "ngRoute",
+       ComponentsModule.name
     ]);
 
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/', {
             templateUrl: 'js/home.html',
-            controller: 'HomeController'
+            controller: 'HomeController',
+            controllerAs: "HomeController"
         }).otherwise({
             redirectTo: '/'
         });
