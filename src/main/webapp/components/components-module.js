@@ -1,10 +1,16 @@
 define([
     "angular",
-    "./multi-select/multi-select-module"
-], function(angular, MultiselectModule) {
+    "./multi-select/multi-select-module",
+    "./navigation/navigation-module",
+], function(
+    angular, 
+    MultiselectModule,
+    NavigationModule
+) {
 
     var ComponentsModule = angular.module("components", [
-        MultiselectModule.name
+        MultiselectModule.name,
+        NavigationModule.name
     ]);
 
     return ComponentsModule;

@@ -4,7 +4,7 @@ define([
     "./multi-select-controller"
 ], function(angular, MultiselectDirective, MultiselectController) {
 
-    var MultiselectModule = angular.module("component.multiselect", []);
+    var MultiselectModule = angular.module("components.multiselect", []);
 
     //MultiselectModule.controller(MultiselectController.getName(), MultiselectController);
     MultiselectModule.directive(MultiselectDirective.getName(), MultiselectDirective);
