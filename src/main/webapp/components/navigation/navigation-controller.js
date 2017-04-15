@@ -6,8 +6,11 @@ define([
     routes
 ){ 
 
-    var NavigationController = function($scope, $location) {
+    var NavigationController = function($scope, $location, $rootScope) {
+        this._scope = $scope;
+        this._rootScope = $rootScope;
         this._location = $location;
+
         this._routes = angular.copy(routes);
     };
 
@@ -38,7 +41,10 @@ define([
                     }
                 });
             }
-            
+        },
+
+        closeSettings: function() {
+            this._rootScope.settingsOpen = false;
         }
     };
 

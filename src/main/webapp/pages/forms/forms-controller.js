@@ -1,6 +1,6 @@
 define([], function() {
-    var FormsController = function($scope) {
-
+    var FormsController = function($scope, $mdMedia) {
+        $scope.$mdMedia = $mdMedia;
     };
 
     FormsController.getName = function() {

@@ -3,7 +3,7 @@ define([
     "./routes",
     "./pages/pages-module",
     "./components/components-module",
-
+    
     "angularAria",
     "angularAnimate",
     "angularMessages",
@@ -54,6 +54,7 @@ define([
             });
         }
     }]);
+
 
     angular.element(document).ready(function() {
         angular.bootstrap(document, [ app.name ]);

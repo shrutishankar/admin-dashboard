@@ -1,11 +1,11 @@
 define([
     "./navigation-controller",
-    "text!./navigation-template.html"
+    "text!./navigation-right-template.html"
 ], function(
     NavigationController,
-    NavigationTemplate
+    NavigationRightTemplate
 ){ 
-    var NavigationDirective = function() {
+    var NavigationRightDirective = function() {
          return {
             restrict: "AE",
             scope: {},
@@ -13,13 +13,13 @@ define([
             //controller: [ "$scope", "$location", function(scope, location) { return new NavigationController(scope, location); }],
             controllerAs: NavigationController.getName(),
             bindToController: true,
-            template: NavigationTemplate
+            template: NavigationRightTemplate
         };
     };
 
-    NavigationDirective.getName = function() {
-        return "navigation";
+    NavigationRightDirective.getName = function() {
+        return "navigationRight";
     }
 
-    return NavigationDirective;
+    return NavigationRightDirective;
 });
