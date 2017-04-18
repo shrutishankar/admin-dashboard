@@ -32,6 +32,12 @@ define([], function() {
             primaryColor: "teal"
         },
 
+        ORANGE: {
+            label: "Orange",
+            name: "orange",
+            primaryColor: "orange"
+        },
+
         GREY: {
             label: "Grey",
             name: "grey",

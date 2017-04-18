@@ -124,6 +124,15 @@
 /********** CURSORS **********/
 .cursor-pointer { cursor: pointer; }
 
+/********** VERTICAL ALIGN **********/
+.vertical-align-middle { vertical-align: middle; }
+.vertical-align-baseline { vertical-align: baseline; }
+.vertical-align-bottom { vertical-align: bottom; }
+.vertical-align-top { vertical-align: top; }
+.vertical-align-text-bottom { vertical-align: text-bottom; }
+.vertical-align-text-top { vertical-align: text-top; }
+
+
 /********** WIDTH **********/
 .width-25-percent { width: 25%; }
 .width-50-percent { width: 50%; }
