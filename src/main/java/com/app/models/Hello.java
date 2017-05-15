@@ -10,6 +10,7 @@ import java.io.Serializable;
 public class Hello implements Serializable {
 
     private final String message;
+    private final static long serialVersionUID = 0;
 
     public Hello(final String world) {
         this.message = world;
