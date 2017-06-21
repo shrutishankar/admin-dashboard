@@ -30,6 +30,9 @@
     "text": "requirejs-text#^2.0.15",
     "angular-bootstrap": "^2.5.0",
     "nz-animate": "^1.0.1",
-    "angular-ui-mask": "^1.8.7"
+    "angular-ui-mask": "^1.8.7",
+    "flot-charts": "*",
+    "highcharts": "^5.0.12",
+    "requirejs-plugins": "^1.0.3"
   }
 }
